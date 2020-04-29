@@ -1,3 +1,5 @@
+# My new failure
+
 In summary, QEMU hangs in the CROPS/Poky Docker container after the login prompt.
 
 The problem may be reproduced from a Ubuntu 18.04 host by following these steps:
@@ -48,8 +50,4 @@ Expected result:
 * After entering "root", QEMU displays the regular prompt.
 * It is possible to execute commands in the emulated OS.
 
-On the other hand, compiling and running the core-image-minimal from the Ubuntu 18.04 host in QEMU works as expected.
-
-Is there a workaround to run QEMU from a Docker container?
-
-PS: I am new to the Yocto project and QEMU. It may not be a good idea to run QEMU on top of a Docker container. I am simply trying to see if I can run everything from a container.
+There is actually a workaround, illustrated in the folder number 05. Thanks to the maintainers of the CROPS/Poky project, who helped me with this.

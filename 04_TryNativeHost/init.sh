@@ -30,8 +30,8 @@ rm -rf meta-helloworld/recipes-example
 
 # Create a new recipes in this application layer to host the hello world program
 mkdir meta-helloworld/recipes-helloworld/helloworld/files
-cp ./helloworld.c meta-helloworld/recipes-helloworld/helloworld/files/
-cp ./recipes-helloworld.bb meta-helloworld/recipes-helloworld/helloworld/
+cp ../helloworld.c meta-helloworld/recipes-helloworld/helloworld/files/
+cp ../recipes-helloworld.bb meta-helloworld/recipes-helloworld/helloworld/
 
 # Build the hello world program for the target embedded OS
 bitbake recipes-helloworld

@@ -1,0 +1,6 @@
+build
+build/*
+build/**
+poky
+poky/*
+poky/**
