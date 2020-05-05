@@ -21,7 +21,6 @@ The problem may be reproduced from a Ubuntu 18.04 host by following these steps:
          build-essential chrpath socat cpio python3 python3-pip python3-pexpect \
          xz-utils debianutils iputils-ping python3-git python3-jinja2 libegl1-mesa libsdl1.2-dev \
          pylint3 xterm
-    
     ```
 
 * Clone Intel Xenomai and run the download script (when prompted, type "1"):
@@ -37,7 +36,6 @@ The problem may be reproduced from a Ubuntu 18.04 host by following these steps:
     cd snapshots/manifest_1/
     source poky/oe-init-build-env build
     bitbake -k core-image-xfce-sdk
-
     ```
 
 * Run the image in QEMU (when prompted for login, type "root"):
