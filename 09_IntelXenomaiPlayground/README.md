@@ -1,6 +1,9 @@
 # Another day, another failure
 
-Intel Xenomai looks great. However, I can't run the Xenomai latency test from the emulated embedded OS.
+Intel Xenomai looks great. However, I can't run the Xenomai latency test from the emulated embedded OS. [Thanks to the help of a maintainer of the Intel Xenomai project](https://github.com/intel/xenomai/issues/3), I was able to fix the issue described below. The trick is:
+```
+sysctl -w kernel.sched_rt_runtime_us=-1
+```
 
 ## Xenomai latency fails to create threads
 
