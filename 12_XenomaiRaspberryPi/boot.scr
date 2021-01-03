@@ -1,0 +1,7 @@
+printenv
+mmc dev 0
+fatload mmc 0:1 ${kernel_addr_r} zImage
+fatload mmc 0:1 0x2000000 bcm2835-rpi-a-plus.dtb
+setenv bootargs earlyprintk console=ttyAMA0,115200 console=tty1 8250.nr_uarts=1 root=/dev/mmcblk0p2 rootwait
+bootz ${kernel_addr_r} - 0x2000000
+

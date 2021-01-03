@@ -1,0 +1,11 @@
+# Linux kernel and Device Tree
+kernel=u-boot.bin
+device_tree=bcm2835-rpi-a-plus.dtb
+
+# HDMI full-screen display
+disable_overscan=1
+
+# UART to USB (using PL011 for improved stability by delegating miniuart for bluetooth)
+enable_uart=1
+dtoverlay=miniuart-bt
+
